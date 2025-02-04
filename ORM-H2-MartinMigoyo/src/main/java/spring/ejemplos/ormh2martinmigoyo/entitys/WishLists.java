@@ -32,4 +32,43 @@ public class WishLists {
     @JsonBackReference
     private List<Products> products;
 
+    public Integer getWishListId() {
+        return wishListId;
+    }
+
+    public void setWishListId(Integer wishListId) {
+        this.wishListId = wishListId;
+    }
+
+    public Boolean getShared() {
+        return shared;
+    }
+
+    public void setShared(Boolean shared) {
+        this.shared = shared;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Customers getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Customers customerId) {
+        this.customerId = customerId;
+    }
+
+    public List<Products> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Products> products) {
+        this.products = products;
+    }
 }

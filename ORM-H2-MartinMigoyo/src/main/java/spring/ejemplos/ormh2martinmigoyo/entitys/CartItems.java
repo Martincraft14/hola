@@ -26,7 +26,36 @@ public class CartItems {
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customers customerId;
-    
-    
 
+    public Integer getCarItemsID() {
+        return carItemsID;
+    }
+
+    public void setCarItemsID(Integer carItemsID) {
+        this.carItemsID = carItemsID;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Products getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Products productId) {
+        this.productId = productId;
+    }
+
+    public Customers getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Customers customerId) {
+        this.customerId = customerId;
+    }
 }

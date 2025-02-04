@@ -26,4 +26,36 @@ public class Orders {
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customers customerId;
+
+    public Integer getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
+    }
+
+    public Double getOrderTotal() {
+        return orderTotal;
+    }
+
+    public void setOrderTotal(Double orderTotal) {
+        this.orderTotal = orderTotal;
+    }
+
+    public LocalDateTime getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(LocalDateTime orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public Customers getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Customers customerId) {
+        this.customerId = customerId;
+    }
 }
